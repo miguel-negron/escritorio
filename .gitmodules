@@ -1,0 +1,3 @@
+[submodule "servidor/workspaceSTS/servidor/workspaceSTS/SpringBoot_tutorial"]
+	path = servidor/workspaceSTS/servidor/workspaceSTS/SpringBoot_tutorial
+	url = https://github.com/marcosfp/SpringBoot_tutorial
