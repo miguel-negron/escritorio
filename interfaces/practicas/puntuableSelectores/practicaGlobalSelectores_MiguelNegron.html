@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Negron</title>
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        fieldset {
+            background-color: darkcyan;
+            border: 1px grey solid;
+        }
+
+        fieldset+fieldset {
+            background-color:turquoise;
+        }
+
+        legend {
+            background-color: white;
+            border: 1px black solid;
+        }
+
+        span {
+            font-size: 150%;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HOJA DE INSCRIPCIÓN EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+
+    <form action="post">
+        <fieldset>
+            <legend> <span>D</span>atos Personales</legend>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre: </label>
+                            <br>
+                            <input type="text" name="nombre">
+                        </td>
+                        <td>
+                            <label for="apellido">Apellido: </label>
+                            <br>
+                            <input type="text" name="apellido">
+                        </td>
+                        <td>
+                            <label for="DNI">DNI </label>
+                            <br>
+                            <input type="text" name="DNI">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="localidadNacimiento">Localidad de Nacimiento </label>
+                            <br>
+                            <input type="text" name="localidadNacimiento">
+                        </td>
+                        <td>
+                            <label for="provincia">Provincia </label>
+                            <br>
+                            <select name="provincia" id="provincia">
+                                <option value="huelva">Huelva</option>
+                                <option value="murcia">Murcia</option>
+                                <option value="restoDeEspana">Otra provincia</option>
+                              </select>
+                        </td>
+                        <td>
+                            <label for="fechaNacimiento">Fecha de Nacimiento </label>
+                            <br>
+                            <input type="date" name="fechaNacimiento">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="direccion">Dirección </label>
+                            <br>
+                            <input type="text" name="direccion">
+                        </td>
+                        <td>
+                            <label for="cp">Código postal </label>
+                            <br>
+                            <input type="text" name="cp">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><span>F</span>orma de Acceso</legend>
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend><span>D</span>ocumentos Adjuntados</legend>
+
+            <table>
+                <tr>
+                    <td> <label for="fotocopiaDNI"><input type="checkbox" name="fotocopiaDNI"> Fotocopia DNI</label>
+                    </td>
+                    <td> <label for="certificadoAcademico"><input type="checkbox"
+                                name="certificadoAcademico">Certificado Academico</label>
+                            </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="certificadoAcademico"><input type="checkbox" name="certificadoAcademico">Otros documentos (especifique) <input type="text"></label>
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
