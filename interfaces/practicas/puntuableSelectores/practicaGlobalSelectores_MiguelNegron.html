@@ -17,7 +17,7 @@
         }
 
         fieldset+fieldset {
-            background-color:turquoise;
+            background-color: turquoise;
         }
 
         legend {
@@ -25,10 +25,42 @@
             border: 1px black solid;
         }
 
-        span {
+        legend::first-letter {
             font-size: 150%;
             font-weight: bold;
 
+        }
+
+
+        input[type=radio]  input[type=radio] {
+            pointer-events: none;
+        }
+
+        input[type=radio]:checked input[type=radio] {
+            pointer-events: all;
+        }
+
+        input[type=radio] + input[type=text] {
+            pointer-events: none;
+        }
+
+        input[type=radio]:checked + input[type=text] {
+            pointer-events: all;
+        }
+
+        input[type=checkbox] + input[type=text] {
+            pointer-events: none;
+        }
+
+        input[type=checkbox]:checked + input[type=text] {
+            pointer-events: all;
+        }
+
+
+        input[type=submit] {
+            background-color: hotpink;
+            margin-top: 12px;
+            border: 1px grey solid;
         }
     </style>
 </head>
@@ -39,7 +71,7 @@
 
     <form action="post">
         <fieldset>
-            <legend> <span>D</span>atos Personales</legend>
+            <legend>Datos Personales</legend>
 
             <table>
                 <tbody>
@@ -73,7 +105,7 @@
                                 <option value="huelva">Huelva</option>
                                 <option value="murcia">Murcia</option>
                                 <option value="restoDeEspana">Otra provincia</option>
-                              </select>
+                            </select>
                         </td>
                         <td>
                             <label for="fechaNacimiento">Fecha de Nacimiento </label>
@@ -98,14 +130,30 @@
         </fieldset>
 
         <fieldset>
-            <legend><span>F</span>orma de Acceso</legend>
+            <legend>Forma de Acceso</legend>
 
+            <dl>
+                <dt><label for="Directo"><input type="radio" id="Directo" value="Directo" name="formaAcceso">
+                        Directo</label></dt>
+                    <dd><label for="Bachillerato"><input type="radio" id="Bachillerato" value="Bachillerato"
+                                name="formaAccesoDirecto"> Bachillerato</label></dd>
+                    <dd><label for="Experimental"><input type="radio" id="Experimental" value="Experimental"
+                                name="formaAccesoDirecto"> Experimental</label></dd>
+                    <dd><label for="COU"><input type="radio" id="COU" value="COU"
+                                name="formaAccesoDirecto"> COU</label></dd>
+                    <dd><label for="FP2"><input type="radio" id="FP2" value="FP2"
+                                name="formaAccesoDirecto"> FP2</label></dd>
+                    <dd><label for="Otros"><input type="radio" id="Otros" value="Otros"
+                                name="formaAccesoDirecto"> Otros (especifique) <input type="text" ></label></dd>
+                <dt><label for="PruebaLibre"><input type="radio" id="PruebaLibre" value="PruebaLibre"
+                            name="formaAcceso"> Prueba Libre</label></dt>
+            </dl>
 
         </fieldset>
 
 
         <fieldset>
-            <legend><span>D</span>ocumentos Adjuntados</legend>
+            <legend>Documentos Adjuntados</legend>
 
             <table>
                 <tr>
@@ -113,18 +161,19 @@
                     </td>
                     <td> <label for="certificadoAcademico"><input type="checkbox"
                                 name="certificadoAcademico">Certificado Academico</label>
-                            </td>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label for="certificadoAcademico"><input type="checkbox" name="certificadoAcademico">Otros documentos (especifique) <input type="text"></label>
+                        <label for="certificadoAcademico"><input type="checkbox" name="certificadoAcademico">Otros
+                            documentos (especifique) <input type="text"></label>
                     </td>
                 </tr>
             </table>
 
         </fieldset>
 
-        <input type="submit">
+        <input type="submit" value="Enviar Solicitud">
     </form>
 </body>
 
