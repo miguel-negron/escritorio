@@ -28,40 +28,32 @@
         legend::first-letter {
             font-size: 150%;
             font-weight: bold;
-
         }
 
+        /*
 
-        input[type=radio]  input[type=radio] {
+        No consigo bloquear los radiobuttons de las formas de acceso directo
+
+        dt input[type=radio]:not(:checked) ~ dd input[type=radio] {
             pointer-events: none;
         }
 
-        input[type=radio]:checked input[type=radio] {
-            pointer-events: all;
-        }
+        */
 
-        input[type=radio] + input[type=text] {
+        input[type=radio]:not(:checked) + input[type=text] {
             pointer-events: none;
         }
 
-        input[type=radio]:checked + input[type=text] {
-            pointer-events: all;
-        }
-
-        input[type=checkbox] + input[type=text] {
+        input[type=checkbox]:not(:checked) + input[type=text] {
             pointer-events: none;
         }
-
-        input[type=checkbox]:checked + input[type=text] {
-            pointer-events: all;
-        }
-
 
         input[type=submit] {
             background-color: hotpink;
             margin-top: 12px;
             border: 1px grey solid;
         }
+
     </style>
 </head>
 
@@ -144,7 +136,7 @@
                     <dd><label for="FP2"><input type="radio" id="FP2" value="FP2"
                                 name="formaAccesoDirecto"> FP2</label></dd>
                     <dd><label for="Otros"><input type="radio" id="Otros" value="Otros"
-                                name="formaAccesoDirecto"> Otros (especifique) <input type="text" ></label></dd>
+                                name="formaAccesoDirecto"> Otros (especifique) <input type="text"></label></dd>
                 <dt><label for="PruebaLibre"><input type="radio" id="PruebaLibre" value="PruebaLibre"
                             name="formaAcceso"> Prueba Libre</label></dt>
             </dl>
@@ -165,7 +157,7 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <label for="certificadoAcademico"><input type="checkbox" name="certificadoAcademico">Otros
+                        <label for="otrosDocumentos"><input type="checkbox" name="otrosDocumentos">Otros
                             documentos (especifique) <input type="text"></label>
                     </td>
                 </tr>
