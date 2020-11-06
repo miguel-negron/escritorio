@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --lado: 100px;
+        }
+
+        div {
+            border: black solid 1px;
+            width: var(--lado);
+            height: var(--lado);
+            float: left;
+            margin: 10px;
+        }
+
+        div:nth-child(4), div:nth-child(7) {
+            clear: left;
+        }
+
+        .green {
+            background-color: greenyellow;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        /*Apartados 2 y 3*/
+        /*
+
+        .white {
+            visibility: hidden;
+        }
+        
+        */
+
+
+        /* Apartado 4 */
+        /*
+        
+        .green {
+            display: none;
+        }
+        
+        */
+
+        /* Apartado 5 */
+        
+        /*
+        .ap5_none {
+            display: none;
+        }
+
+        .ap5_hidden {
+            visibility: hidden;
+        }
+        
+        div:nth-child(5), div:nth-child(9) {
+            clear: left;
+        }
+
+        div:nth-child(7) {
+            clear: none;
+        }
+       */
+    </style>
+</head>
+
+<body>
+
+    <div class="white">Caja 1</div>
+    <div class="white ap5_hidden">Caja 2</div>
+    <div class="white">Caja 3</div>
+
+
+    <div class="green ap5_none">Caja 4</div>
+    <div class="green">Caja 5</div>
+    <div class="green ap5_hidden">Caja 6</div>
+    
+
+    <div class="blue">Caja 7</div>
+    <div class="blue ap5_none">Caja 8</div>
+    <div class="blue">Caja 9</div>
+
+
+</body>
+
+</html>
