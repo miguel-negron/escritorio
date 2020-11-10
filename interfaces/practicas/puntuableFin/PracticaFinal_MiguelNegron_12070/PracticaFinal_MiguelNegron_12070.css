@@ -34,11 +34,27 @@ a {
     box-shadow: 4px 4px 8px #888888;
 }
 
-footer {
+.links a:hover {
+    background-color: rgb(124, 214, 164);
+    color: white;
+}
+
+.footer {
     width: 100%;
+    text-align: center;
+    float: left;
+}
+
+.footer hr {
+    border-top: rgb(0, 90, 0) 1px solid;
+
 }
 
 .fecha {
     float: right;
+}
+
+hr + p {
+    font-style: italic;
 }
 
