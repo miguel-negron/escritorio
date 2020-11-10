@@ -1,3 +1,16 @@
+/*Selectores*/
+a {
+    border-bottom: thin dashed rgb(50, 130, 50);
+    color: rgb(50, 130, 50);
+    text-decoration: none;
+}
+
+hr + p {
+    font-style: italic;
+}
+
+/* Clases */
+
 .header {
     border-radius: 10px;
     background: rgb(1,122,1);
@@ -16,14 +29,8 @@
     font-weight: bold;
     background-color: rgb(124, 214, 164);
     border-radius: 0px 0px 8px 8px;
-    padding: 4px;
+    padding: 6px;
     box-shadow: 4px 4px 8px #888888;
-}
-
-a {
-    border-bottom: thin dashed rgb(50, 130, 50);
-    color: rgb(50, 130, 50);
-    text-decoration: none;
 }
 
 .links a {
@@ -53,8 +60,3 @@ a {
 .fecha {
     float: right;
 }
-
-hr + p {
-    font-style: italic;
-}
-
