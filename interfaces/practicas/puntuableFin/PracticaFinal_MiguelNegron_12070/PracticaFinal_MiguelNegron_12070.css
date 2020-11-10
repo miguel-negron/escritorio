@@ -1,0 +1,44 @@
+.header {
+    border-radius: 10px;
+    background: rgb(1,122,1);
+    background: linear-gradient(180deg, rgba(1,122,1,0.9201186096783981) 0%, rgba(219,236,219,1) 43%, rgba(255,255,255,1) 100%);    border: green 1px solid;
+    padding: 8px;
+    box-shadow: 4px 4px 8px #888888 ;
+}
+
+.contenido {
+    width: 29%;
+    float: left;
+    padding: 2%;
+}
+
+.tituloInterior {
+    font-weight: bold;
+    background-color: rgb(124, 214, 164);
+    border-radius: 0px 0px 8px 8px;
+    padding: 4px;
+    box-shadow: 4px 4px 8px #888888;
+}
+
+a {
+    border-bottom: thin dashed rgb(50, 130, 50);
+    color: rgb(50, 130, 50);
+    text-decoration: none;
+}
+
+.links a {
+    float: right;
+    border: green 1px solid;
+    padding: 4px;
+    color: green;
+    box-shadow: 4px 4px 8px #888888;
+}
+
+footer {
+    width: 100%;
+}
+
+.fecha {
+    float: right;
+}
+
